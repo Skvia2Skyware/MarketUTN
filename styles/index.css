@@ -1,114 +1,168 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
 body {
-background: #1e1e1e;
-}
-nav {
-    background: #1e1e1e;
+    margin: 0;
 }
 
-.container {
-    margin: auto;
+/* style market */
+.container-producto {
+    position: relative;
+    margin-top: 5em;
+    padding: 4px;
+}
+
+.grid-container {
     display: flex;
-    justify-content: space-between;
-    max-width: 100;
-    line-height: 80px;
-    z-index: 100;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: center;
+    padding: 5px;
+    justify-content: space-evenly;
+
+
 }
 
-.container-name {
-    margin-left: 20px;
-    z-index: 100;
-    cursor: pointer;
-}
-.container-name h2 {
-    color: rgb(131, 153, 248);
-    font-weight: 300;
-    font-size: 35px;
-    letter-spacing: 2px;
+/* carousel images*/
+.grid1 {
+    
+    padding: 5px;
 }
 
-.container-name h2 span {
-    color: aqua;
-    font-weight: 700;
+.mySlides {
+    align-items: center;
 }
 
-.d-flex {
-    margin: auto;
+.img-bottom {
+    padding: 2px;
+}
+
+.img-demo {
     display: flex;
-    justify-content: space-between;
-    max-width: 100;
-    line-height: 80px;
-    z-index: 100;
+    justify-content: center;
 }
 
-.form-control {
-    border-radius: 10px;
-    height: 35px;
+.demo {
+    height: 5em;
 }
 
-.btn-outline-success {
-    width: 35px;
-    border-radius: 100px;
-    background-color: transparent;
-    color: rgb(255, 255, 255);
+/*title, price and btn*/
+
+.grid2 {
+    margin-top: 4em;
 }
 
-.links .link {
-    display: inline-block;
+.title {
+    font-family: 'Century Gothic';
+    font-size: 3em;
 }
-.links .link a {
-    text-decoration: none;
+
+.price {
+    font-family: 'Century Gothic';
+    font-size: 2em;
+}
+
+.calificacion {
+    font-family: 'Century Gothic';
+    font-size: 1em;
+}
+
+.ec-stars-wrapper {   
+    font-size: 0;
+	display: inline-block;
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	font-size: 32px;
+	font-size: 2rem;
+	
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(39, 130, 228);
+}
+
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
+  
+
+
+.btnC {
+    margin-top: 1em;
+    border-radius: 40px;
+    background-color: #393939;
     color: rgb(255, 255, 255);
     font-size: 20px;
-    letter-spacing: 3px;
-    margin: 0 25px;
-    transition: .3s;
+    width: 200px;
+    font-family: 'Century Gothic';
+    padding: 15px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.links .link a:hover {
+.btnA {
+    border-radius: 40px;
+    background-color: #393939;
     color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 200px;
+    font-family: 'Century Gothic';
+    width: 13em;
+    padding: 15px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.toggle {
-    color:rgb(255, 255, 255);
-    margin-right: 20px;
-    font-size: 30px;
-    transform: rotate(90deg);
-    cursor: pointer;
-    transition: .3s;
-    display: none;
-}
-.rotate {
-    transform: rotate(180deg);
-}
-@media screen and (max-width: 800px){
-     .toggle {
-        display: inline-block;
-     }  
-     .links{
-        position: absolute;
+
+
+/* imagenes data */
+.resumen {
     display: flex;
-    flex-direction: column;
-    background: #383838; 
-    text-align: center;
-    overflow: hidden;
-    height: calc(100vh -80px);
+    position: relative;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.products {
+    padding: auto;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.img-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
     width: 100%;
-    z-index: -1;
-    top: -100vh;
-    transition: .4s;
-    }
-
-.active {
-    top: 80px;
 }
 
-    .links .link:hover {
-        background: #303030;
-    }
+.img-dato {
+width: 20%;
 }
+span {
+    display: flex;
+    justify-content: center;
+    font-family: 'Century Gothic';
+
+}
+
+/* Grid img description */
+.grid-inicio {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: 60px;
+    margin-top: 2em;
+    background-color: #FECEA8;
+    justify-content: space-around;
+    /* background: linear-gradient(to top, #2A363B 0%, #E84A5F 20%, #FF847C 40%, #FECEA8 60%, #99b898 80%, #2A363B 100%); */
+}
+
+.presentacion {
+    position: relative;
+}
+
